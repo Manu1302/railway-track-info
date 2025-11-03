@@ -3,50 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Railway Track Information - RAILFIT-042</title>
+  <title>Track Info - Coimbatore Junction | TRACK-SEG-001</title>
   <style>
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(135deg, #e8f0ff, #ffffff);
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
       margin: 0;
       padding: 0;
-    }
-
-    .container {
-      background: white;
-      max-width: 600px;
-      margin: 80px auto;
-      padding: 30px 25px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 0.8s ease;
-    }
-
-    h1 {
-      color: #0056b3;
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 28px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .info {
-      margin: 14px 0;
-      font-size: 18px;
       color: #333;
     }
 
+    .container {
+      max-width: 750px;
+      margin: 80px auto;
+      padding: 40px 35px;
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      color: #004c99;
+      font-size: 30px;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 25px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px 25px;
+    }
+
+    .info {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 12px 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .info:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
     .label {
-      font-weight: bold;
+      font-weight: 600;
       color: #00509e;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      font-size: 17px;
+      color: #333;
     }
 
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 45px;
       font-size: 14px;
-      color: #777;
+      color: #555;
     }
 
     @keyframes fadeIn {
@@ -58,12 +88,74 @@
 <body>
   <div class="container">
     <h1>Railway Track Information</h1>
-    <div class="info"><span class="label">Company Name:</span> Indian RailTech Pvt Ltd</div>
-    <div class="info"><span class="label">Manufacturing Date:</span> 15-Oct-2025</div>
-    <div class="info"><span class="label">Installation Date:</span> 20-Oct-2025</div>
-    <div class="info"><span class="label">Location:</span> Track Section 42, Bhubaneswar, Odisha</div>
-    <div class="info"><span class="label">QR ID:</span> RAILFIT-042</div>
-    <div class="info"><span class="label">Sensor Info:</span> Accelerometer + Temperature + Crack Sensor</div>
+    <div class="subtitle">Coimbatore Junction – Platform 1A</div>
+
+    <div class="info-grid">
+      <div class="info">
+        <span class="label">Station Code</span>
+        <span class="value">CBE</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Track ID</span>
+        <span class="value">TRACK-SEG-001</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Line Name</span>
+        <span class="value">Chennai–Palakkad Main Line</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Division</span>
+        <span class="value">Salem Division (SR)</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Zone</span>
+        <span class="value">Southern Railway</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Platform Type</span>
+        <span class="value">High-level Passenger Platform</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Installation Date</span>
+        <span class="value">03-Nov-2024</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Last Inspection Date</span>
+        <span class="value">28-Oct-2025</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Next Due Date</span>
+        <span class="value">28-Jan-2026</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Condition of Track</span>
+        <span class="value">Good</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Maintained By</span>
+        <span class="value">SSE/Works – CBE</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Contact</span>
+        <span class="value">+91-9876543210</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Permitted Speed Limit</span>
+        <span class="value">100 km/h</span>
+      </div>
+    </div>
   </div>
 
   <footer>© 2025 Indian RailTech Pvt Ltd | Internal Use Only</footer>
